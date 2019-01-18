@@ -1,0 +1,13 @@
+# https://medium.com/@suci/running-pyspark-on-jupyter-notebook-with-docker-602b18ac4494
+
+
+version: '2'
+
+services:
+
+  spark:
+    image: jupyter/pyspark-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./work/:/home/jovyan/work/
